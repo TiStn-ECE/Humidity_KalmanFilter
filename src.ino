@@ -24,7 +24,7 @@ uint8_t result;
 float temp, hum, temp2, hum2;
 unsigned char dataArduino[3];
 boolean publishCek;
-float errorEst = 0.035, errorMea = 0.035;
+float errorEst = 0.03, errorMea = 0.03, variance = 0.01;
 float kalmanGain, currentEst, lastEst, estimated_value;
 
 void preTransmission()
